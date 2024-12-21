@@ -1,0 +1,17 @@
+import pandas as pd
+
+data = {'Имя': ['Ivan', 'Ania', 'Sergey', 'lyosha'],
+        'Возраст': [25, 30, 22, 28]}
+df = pd.DataFrame(data)
+
+print(df.tail(2))
+
+print(df.iloc[1:3])
+
+print(df.query("Возраст > 25"))
+
+print(df['Имя'])
+
+df_excel = pd.read_excel('data.xlsx')
+print(df_excel.info())
+print(df_excel[['column1', 'column2']])
