@@ -15,3 +15,16 @@ print(df['Имя'])
 df_excel = pd.read_excel('data.xlsx')
 print(df_excel.info())
 print(df_excel[['column1', 'column2']])
+
+
+
+
+21. 01. 25
+
+import pandas as pd
+x = int(input("Введите строчку"))
+y = int(input("Введите столбец"))
+
+df_excel = pd.read_excel('99.xlsx')
+print(df_excel.iloc[x,y])
+
