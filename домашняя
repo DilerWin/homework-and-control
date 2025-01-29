@@ -28,3 +28,26 @@ y = int(input("Введите столбец"))
 df_excel = pd.read_excel('99.xlsx')
 print(df_excel.iloc[x,y])
 
+29.01.25
+
+df = pd.DataFrame(data)
+
+while True:
+    print("Меню:")
+    print("1. Вывести весь DataSet")
+    print("2. Вывести строку по индексу")
+    print("3. Вывести столбец по индексу")
+    print("4. Вывести ячейку по индексам")
+    print("5. Выход")
+
+    choice = input("Выберите действие: ")
+
+    if choice == 1:
+        print(df)
+    elif  == 2:
+        try: try:
+            index = int(input("Введите строку: "))
+            print(df.iloc[index])
+        except (ValueError, IndexError):
+            print("Некорректный индекс.")
+
